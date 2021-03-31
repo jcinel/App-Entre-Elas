@@ -135,6 +135,17 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Container(
+            body: Center(
+              child: RaisedButton(
+                child: Text('Abrir rota(tela)'),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => LoginPage()),
+                    );
+                  },
+              ),
+            ),
             height: MediaQuery.of(context).size.height/3,
             padding: EdgeInsets.all(20),
             color: Colors.white,
