@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_sororidade/Telas/TelaLogin.dart';
+import 'package:projeto_sororidade/Telas/TelaInicial.dart';
 
 void main() =>runApp(MyApp());
 
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: LoginPage(),
+      home: TelaInicial(),
     );
   }
 }
