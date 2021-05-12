@@ -1,4 +1,3 @@
-/*
 import 'package:flutter/material.dart';
 
 void main() => runApp(LoginPage());
@@ -14,7 +13,7 @@ class LoginTela extends State<LoginPage> {
     return Scaffold(
       body: Container(
         padding: EdgeInsets.only(
-          top: 60,
+          top: 150,
           left: 40,
           right: 40,
         ),
@@ -27,61 +26,7 @@ class LoginTela extends State<LoginPage> {
               child: Image.asset("assets/icone.jpeg"),
             ),
             SizedBox(
-              height: 20,
-            ),
-            TextFormField(
-              keyboardType: TextInputType.emailAddress,
-              decoration: InputDecoration(
-                labelText: "E-mail",
-                labelStyle: TextStyle(
-                  color: Colors.black38,
-                  fontWeight: FontWeight.w400,
-                  fontSize: 20,
-                ),
-              ),
-              style: TextStyle(
-                fontSize: 20,
-              ),
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            TextFormField(
-              keyboardType: TextInputType.text,
-              obscureText: true,
-              decoration: InputDecoration(
-                labelText: "Senha",
-                labelStyle: TextStyle(
-                  color: Colors.black38,
-                  fontWeight: FontWeight.w400,
-                  fontSize: 20,
-                ),
-              ),
-              style: TextStyle(fontSize: 20),
-            ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
-              child: Container(
-                height: 50.0,
-                child: FlatButton(
-                  onPressed: () {},
-                  shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(30.0)),
-                  color: Colors.orange,
-                  child: Text(
-                    "entrar",
-                    style: TextStyle(color: Colors.white, fontSize: 22.0),
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(150, 5, 100, 5),
-              child: Text(
-                "ou",
-                style: TextStyle(
-                    color: Colors.black, fontWeight: FontWeight.normal),
-              ),
+              height: 40,
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
@@ -100,16 +45,33 @@ class LoginTela extends State<LoginPage> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(30, 5, 10, 5),
+              padding: EdgeInsets.fromLTRB(150, 0, 100, 0),
               child: Text(
-                "não tem uma conta? cadastre-se!",
+                "OU",
                 style: TextStyle(
                     color: Colors.black, fontWeight: FontWeight.normal),
               ),
             ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
+              child: Container(
+                height: 50.0,
+                child: FlatButton(
+                  onPressed: () {},
+                  shape: new RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(30.0)),
+                  color: Colors.red,
+                  child: Text(
+                    "conectar com google",
+                    style: TextStyle(color: Colors.white, fontSize: 22.0),
+                  ),
+                ),
+              ),
+            ),
+
           ],
         ),
       ),
     );
   }
-}*/
+}
