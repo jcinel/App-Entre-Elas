@@ -62,7 +62,7 @@ class LoginTela extends State<LoginPage> {
                       borderRadius: new BorderRadius.circular(30.0)),
                   color: Colors.red,
                   child: Text(
-                    "conectar com google",
+                    "conectar com google", 
                     style: TextStyle(color: Colors.white, fontSize: 22.0),
                   ),
                 ),
